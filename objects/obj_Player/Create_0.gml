@@ -6,6 +6,7 @@ playerId = -1;
 
 playerSpeed = 32;
 
+
 finished = false;
 alive = true;
 

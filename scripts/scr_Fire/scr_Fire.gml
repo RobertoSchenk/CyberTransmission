@@ -65,15 +65,17 @@ for(var i =0; i < 3; i++)
 {
 	if(tile_get_index(CheckTiles[i]) == 3)
 	{
-		
 		scr_DestroyBox(hitPosX[i], hitPosY[i]);
 	}
-	var instance;
-	instance = instance_place(hitPosX[i] * global.TileSize, hitPosY[i]  * global.TileSize, obj_Player);
-	if(instance != noone)
-	{
-		show_debug_message("shoul kill at: "+ string(hitPosX[i])+ "," +string(hitPosY[i]));
-		instance.alive = false;	
+	
+		for(var j = 0; j < 3; j++)
+		{
+			if(hitPosX[i] == obj_PlayerOrganizer.playerArray[| j].tileX && hitPosY[i] == obj_PlayerOrganizer.playerArray[| j].tileY)
+			{
+				obj_PlayerOrganizer.playerArray[| j].alive = false;	
+	
+			}
+
 	}
 	
 	

@@ -105,10 +105,13 @@ else if(keyboard_check_pressed(Input_RightKey))
 	
 	for(var i = 0; i <  ds_list_size(playerArray); i++)
 	{
+		if(!playerArray[| i].finished)
+		{
 		with(playerArray[| i])
 		{
 			scr_Move(playerDir);
 			scr_UpdateSprite();
+		}
 		}
 	}
 }
@@ -131,7 +134,7 @@ else if(keyboard_check_pressed(Input_Action))
 
 for( i = ds_list_size(playerArray)-1; i >= 0 ;i--)
 {
-		if(!playerArray[| i].finished)
+		if(!playerArray[| i].finished )
 		{
 			with(playerArray[| i])
 			{
@@ -141,3 +144,40 @@ for( i = ds_list_size(playerArray)-1; i >= 0 ;i--)
 		}
 }
 
+for(var i = 0; i <  ds_list_size(playerArray); i++)
+	{
+		if(!playerArray[| i].finished && !playerArray[| i].alive)
+		{
+			room_restart();
+		}
+	}
+
+
+finished = true;
+	 for(var i =0; i <ds_list_size(playerArray) ;i++)
+	 {
+			 if(!playerArray[| i].finished)
+			 {
+				finished =false;
+				break;
+			 }
+	 }
+	 
+	 if(checkForFinish && finished)
+	 {
+		
+		if(room_next(room))
+		{
+			show_debug_message("Finished");
+			checkForFinish = false;
+			room_goto(room_next(room));	
+		}
+		else
+		{
+			show_message("Finished Gaem");
+			game_end();
+		}
+	 }
+	 
+	 
+	

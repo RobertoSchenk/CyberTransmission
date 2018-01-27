@@ -87,14 +87,6 @@
             }
         },
         {
-            "Key": "15810dd3-f784-4673-a896-43ed550d9dc9",
-            "Value": {
-                "id": "e79fe312-1f10-48dd-9d29-b3dfeda6cbb1",
-                "resourcePath": "rooms\\room0111111\\room0111111.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "1a49ea4a-b977-418d-a05c-4e23d497e8a7",
             "Value": {
                 "id": "6794420b-7af1-4659-ac9d-3b75e3202b40",
@@ -295,14 +287,6 @@
             }
         },
         {
-            "Key": "7fe4c189-7bfc-4c7e-929c-28051063b84e",
-            "Value": {
-                "id": "51a17584-4170-4aa9-b628-8d5e700c195b",
-                "resourcePath": "rooms\\room011111\\room011111.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "8545cfd7-12c5-4129-9ffe-765799886158",
             "Value": {
                 "id": "1b8afd54-8328-4d02-9761-b29b5915c8a0",
@@ -327,14 +311,6 @@
             }
         },
         {
-            "Key": "8a92c0ed-fade-4bf5-844e-b7ab583c0c4c",
-            "Value": {
-                "id": "49d2485f-f99e-491f-866b-ef28b0e1d7f8",
-                "resourcePath": "rooms\\room0111\\room0111.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "8b3f36c6-1dab-44f3-89a7-f3e35944c1ba",
             "Value": {
                 "id": "e35459de-583e-48da-a16f-6d4a03d8a8a0",
@@ -348,6 +324,14 @@
                 "id": "a05a9fd9-5145-4e7c-abed-3bf393481364",
                 "resourcePath": "sprites\\spr_goal\\spr_goal.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "94b6573e-5bc5-4ca5-8eaa-43a2715e969e",
+            "Value": {
+                "id": "2c9ac77b-c4f4-4fbd-84bc-2e6dd1a16d92",
+                "resourcePath": "rooms\\room01\\room01.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -372,14 +356,6 @@
                 "id": "519008fc-524a-427b-8e2b-654a47ec5f67",
                 "resourcePath": "sprites\\spr_Hole\\spr_Hole.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "9cb10ca8-7e55-4979-95a3-52d7555415e1",
-            "Value": {
-                "id": "53bb5dfb-4013-4a83-9689-63da617303bd",
-                "resourcePath": "rooms\\room01111\\room01111.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
