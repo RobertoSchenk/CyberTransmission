@@ -3,6 +3,9 @@ var Tile;
 var posX = x;
 var posY = y;
 
+var tileX = tilemap_get_cell_x_at_pixel(obj_CollisionMap.mapId, posX, posY);
+var tileY = tilemap_get_cell_y_at_pixel(obj_CollisionMap.mapId, posX, posY);
+
 if(playerDir == "u")
 {
 	Tile = tilemap_get_at_pixel(obj_CollisionMap.mapId, x, y - global.TileSize);
@@ -34,6 +37,8 @@ else if(playerDir == "r")
 
 }
 
+
+show_debug_message("targeting for punch: " + string(tileX) + ", " + string(tileY));
 
 if(tile_get_index(Tile) == 3)
 {

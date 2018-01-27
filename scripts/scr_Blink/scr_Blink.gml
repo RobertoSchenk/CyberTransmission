@@ -63,7 +63,14 @@ if(Index1 == 2 || Index2 == 2 || Index2 == 3)
 
 for(var i =0; i < 2; i++)
 {
-var instance = instance_place(targetPositionsX[i], targetPositionsY[i], obj_Player);
+	if(axis == "h")
+	{
+		var instance = instance_place(targetPositionsX[i], y, obj_Player);
+	}
+	else if(axis == "v")
+	{
+		instance = instance_place(x, targetPositionsY[i], obj_Player);	
+	}
 
 if(instance != noone)
 {
