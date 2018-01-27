@@ -4,9 +4,9 @@
     "mvc": "1.1",
     "name": "8545cfd7-12c5-4129-9ffe-765799886158",
     "children": [
-        "174188b3-4ad0-447b-ad9e-9ba91a159d94",
-        "f038523e-9280-4a3d-8d66-954118702e31",
-        "761ba629-260a-4462-8238-5ab9e6d14560"
+        "761ba629-260a-4462-8238-5ab9e6d14560",
+        "f46e3591-2b8e-4232-a00e-4ffb2706cef6",
+        "cb127c4f-a6be-4019-9d98-71219ee57d19"
     ],
     "filterType": "GMSprite",
     "folderName": "Characters",

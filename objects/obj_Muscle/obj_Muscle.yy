@@ -1,28 +1,28 @@
 {
-    "id": "9894e67c-3eac-48b5-8606-744545828f41",
+    "id": "cda8b5a0-f71d-4727-8d63-f57b94b57c22",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "obj_Muscle",
     "eventList": [
         {
-            "id": "fb1c0e54-297a-4d46-9812-49bf8cc95d47",
+            "id": "f5145914-ff0e-4458-8ae4-50a6261132a5",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "9894e67c-3eac-48b5-8606-744545828f41"
+            "m_owner": "cda8b5a0-f71d-4727-8d63-f57b94b57c22"
         },
         {
-            "id": "6358f204-6732-4aa6-90ba-9a48818760bb",
+            "id": "c71c01be-d790-489f-8209-d1e022221449",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 1,
-            "m_owner": "9894e67c-3eac-48b5-8606-744545828f41"
+            "m_owner": "cda8b5a0-f71d-4727-8d63-f57b94b57c22"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "70b0a7c9-412d-44f0-96f4-776b9273ec10",
+    "spriteId": "dd0ac8ca-4672-4a77-bd86-92d908974e19",
     "visible": true
 }

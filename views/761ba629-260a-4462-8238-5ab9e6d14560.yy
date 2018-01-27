@@ -4,10 +4,10 @@
     "mvc": "1.1",
     "name": "761ba629-260a-4462-8238-5ab9e6d14560",
     "children": [
-        "e367ffb2-b8cd-49b1-a4b5-a4f11cb55116",
-        "ea6a9af4-e5cc-4e5d-867d-6d00b9c7925d",
-        "c8b2a1ba-3b3b-478b-8e31-5e3bde6840d2",
-        "ccf55983-c3e7-4e90-8c35-544b55cb07cb"
+        "961c9f3e-42aa-4de3-b8fe-386edf3c5e6c",
+        "275d4b81-8260-47fc-90c5-add34591590d",
+        "7e2a24a8-d57f-46a6-b26c-d92552d1f2c8",
+        "52cfdb12-ec2d-49bf-b420-67bc6fddc9ea"
     ],
     "filterType": "GMSprite",
     "folderName": "Fire",

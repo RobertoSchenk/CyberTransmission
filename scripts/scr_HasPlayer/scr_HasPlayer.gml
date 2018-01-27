@@ -9,11 +9,11 @@ var free = true;
 
 var playerArray = obj_PlayerOrganizer.playerArray;
 
-	for(var i = 0; i < array_length_1d(playerArray); i++)
+	for(var i = 0; i <  ds_list_size(playerArray); i++)
 	{
 		if(i != self.playerId)
 		{
-			if(playerArray[i].targetTileX == gridX && playerArray[i].targetTileY == gridY)
+			if(playerArray[| i].targetTileX == gridX && playerArray[| i].targetTileY == gridY)
 			{
 				free = false;
 				break;

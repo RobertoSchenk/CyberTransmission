@@ -11,3 +11,6 @@ targetTileX = 0;
 targetTileY = 0;
 
 skillScript = noone;
+
+classColor = c_white;
+className = "noClass";

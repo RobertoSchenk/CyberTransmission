@@ -8,6 +8,9 @@ if(self.tileX >= global.xgrid) self.tileX = global.xgrid-1;
 if(self.tileX < 0)self.tileX = 0;
 self.tileY = tilemap_get_cell_y_at_pixel(obj_CollisionMap.mapId, x, y);
 
+beforePosX = x;
+beforePosY = y;
+
 if(playerDir == "u")
 {
 	//var nextTileY = tilemap_get_cell_y_at_pixel(obj_CollisionMap.mapId, x, y - Border);
@@ -59,4 +62,5 @@ else if(playerDir == "r")
 	self.tileX++;
 	}
 }
+
 
