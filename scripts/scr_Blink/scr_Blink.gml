@@ -3,6 +3,8 @@ var dir = playerDir;
 var dirModX = 1;
 var dirModY = 1;
 
+var targetPositionsX, targetPositionsY;
+
 var dirSignal;
 var axis;
 
@@ -38,6 +40,12 @@ else if(dir == "r")
 
 }
 
+targetPositionsX[0] = x + dirModX;
+targetPositionsX[1] = x + dirModX*2;
+
+targetPositionsY[0] =  y + dirModY;
+targetPositionsY[1] = y + dirModY * 2;
+
 var X1 = tilemap_get_cell_x_at_pixel(obj_CollisionMap.mapId, x + dirModX, y);
 var X2 = tilemap_get_cell_x_at_pixel(obj_CollisionMap.mapId, x + dirModX*2, y);
 var Y1 =tilemap_get_cell_y_at_pixel(obj_CollisionMap.mapId, x, y + dirModY);
@@ -53,6 +61,16 @@ if(Index1 == 2 || Index2 == 2 || Index2 == 3)
 	canJump = false;	
 }
 
+for(var i =0; i < 2; i++)
+{
+var instance = instance_place(targetPositionsX[i], targetPositionsY[i], obj_Player);
+
+if(instance != noone)
+{
+	canJump = false;	
+}
+
+}
 if(axis == "h")
 {
 	if(X1 <0 || X1 >= global.xgrid)

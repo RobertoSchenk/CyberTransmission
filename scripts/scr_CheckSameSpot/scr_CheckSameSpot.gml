@@ -16,20 +16,39 @@ var Destroy = false;
 
 if(tile_get_index(Tile == 4))
 {
-	room_restart();
+	alive = false;
 		
 }
 
 else if(tile_get_index(Tile == 5))
 {
 	var index = ds_list_find_index(obj_PlayerOrganizer.playerArray, self); 	
-	ds_list_delete(obj_PlayerOrganizer.playerArray, index);
+	//ds_list_delete(obj_PlayerOrganizer.playerArray, playerId);
+	self.visible= false;
+	self.finished = true;
+	targetTileX = -1;
+	targetTileY = -1;
+	tileX = -1;
+	tileY = -1;
 	
-	Destroy = true;
+	x= 10000;
+	y = 10000;
+	
 }
 
-if( ds_list_size(obj_PlayerOrganizer.playerArray) <= 0)
+
+	var count = ds_list_size(obj_PlayerOrganizer.playerArray);
+	 for(var i =0; i <ds_list_size(obj_PlayerOrganizer.playerArray) ;i++)
+	 {
+			 if(obj_PlayerOrganizer.playerArray[| i].finished)
+			 {
+				count--;	 
+			 }
+	 }
+	 
+	 if(count <= 0)
 {
+	
 	if(room_next(room) != -1)
 	{
 		room_goto(room_next(room));	
@@ -40,10 +59,9 @@ if( ds_list_size(obj_PlayerOrganizer.playerArray) <= 0)
 	}
 	
 }
-if(Destroy)
-{
-	instance_destroy();
-}
+
+
+
 
 
 

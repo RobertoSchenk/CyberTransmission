@@ -16,18 +16,24 @@ if(keyboard_check_pressed(Input_Upkey))
 {
 	for(var i = 0; i < ds_list_size(playerArray); i++)
 	{
-		with(playerArray[| i])
+		if(!playerArray[| i].finished)
 		{
-			scr_calculateDesired("u");
+			with(playerArray[| i])
+			{
+				scr_calculateDesired("u");
+			}
 		}
 	}
 	
 	for(var i = 0; i <  ds_list_size(playerArray); i++)
 	{
+		if(!playerArray[| i].finished)
+		{
 		with(playerArray[| i])
 		{
 			scr_Move(playerDir);
 			scr_UpdateSprite();
+		}
 		}
 	}
 }
@@ -36,18 +42,24 @@ else if(keyboard_check_pressed(Input_DownKey))
 {
 	for(var i = 0; i <  ds_list_size(playerArray); i++)
 	{
+		if(!playerArray[| i].finished)
+		{
 		with(playerArray[| i])
 		{
 			scr_calculateDesired("d");
+		}
 		}
 	}
 	
 	for(var i = 0; i <  ds_list_size(playerArray); i++)
 	{
+		if(!playerArray[| i].finished)
+		{
 		with(playerArray[| i])
 		{
 			scr_Move(playerDir);
 			scr_UpdateSprite();
+		}
 		}
 	}
 }
@@ -56,18 +68,24 @@ else if(keyboard_check_pressed(Input_LeftKey))
 {
 	for(var i = 0; i <  ds_list_size(playerArray); i++)
 	{
+		if(!playerArray[| i].finished)
+		{
 		with(playerArray[| i])
 		{
 			scr_calculateDesired("l");
+		}
 		}
 	}
 	
 	for(var i = 0; i <  ds_list_size(playerArray); i++)
 	{
+		if(!playerArray[| i].finished)
+		{
 		with(playerArray[| i])
 		{
 			scr_Move(playerDir);
 			scr_UpdateSprite();
+		}
 		}
 	}
 }
@@ -76,9 +94,12 @@ else if(keyboard_check_pressed(Input_RightKey))
 {
 	for(var i = 0; i <  ds_list_size(playerArray); i++)
 	{
+		if(!playerArray[| i].finished)
+		{
 		with(playerArray[| i])
 		{
 			scr_calculateDesired("r");
+		}
 		}
 	}
 	
@@ -95,9 +116,12 @@ else if(keyboard_check_pressed(Input_Action))
 {
 	for(var i = 0; i <  ds_list_size(playerArray); i++)
 	{
-		with(playerArray[| i])
+		if(!playerArray[| i].finished)
 		{
-			script_execute(skillScript);
+			with(playerArray[| i])
+			{
+				script_execute(skillScript);
+			}
 		}
 	}
 	
@@ -107,13 +131,13 @@ else if(keyboard_check_pressed(Input_Action))
 
 for( i = ds_list_size(playerArray)-1; i >= 0 ;i--)
 {
+		if(!playerArray[| i].finished)
+		{
 			with(playerArray[| i])
 			{
 		
 				scr_CheckSameSpot();	
 			}
+		}
 }
-
-
-
 

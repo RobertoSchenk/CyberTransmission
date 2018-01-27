@@ -7,6 +7,8 @@
         "8b3f36c6-1dab-44f3-89a7-f3e35944c1ba",
         "02b2b9d6-14d7-4f53-becb-ada0ac7314a6",
         "9abb059f-72c9-4111-899a-9a86ff79b6c1",
+        "90ed7ffa-041b-426f-89a9-71c718d815f7",
+        "1f26d28b-e087-44ec-918c-a722798964b5",
         "11d056af-f6fb-46af-a0f7-78b5bb0bd3af"
     ],
     "filterType": "GMSprite",

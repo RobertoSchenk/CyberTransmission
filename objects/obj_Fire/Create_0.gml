@@ -10,7 +10,6 @@ directionSprites[? "d"] = spr_FireDown;
 directionSprites[? "l"] = spr_FireLeft;
 directionSprites[? "r"] = spr_FireRight;
 
-className = "Fire";
-classColor = c_red;
+className = "";
 
 scr_UpdateSprite();
