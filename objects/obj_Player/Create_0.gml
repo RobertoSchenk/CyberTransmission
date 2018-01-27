@@ -1,5 +1,7 @@
 playerDir = "d";
 
+global.CanDraw = true;
+
 playerId = -1;
 
 playerSpeed = 32;
@@ -11,6 +13,7 @@ targetTileX = 0;
 targetTileY = 0;
 
 skillScript = noone;
+skillPriority = 0;
 
 classColor = c_white;
 className = "noClass";

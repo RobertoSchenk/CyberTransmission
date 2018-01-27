@@ -11,6 +11,7 @@ Input_LeftKey = ord("A");
 
 Input_RightKey = ord("D");
 
+Input_Action = vk_space;
 if(keyboard_check_pressed(Input_Upkey))
 {
 	for(var i = 0; i < ds_list_size(playerArray); i++)
@@ -90,13 +91,29 @@ else if(keyboard_check_pressed(Input_RightKey))
 		}
 	}
 }
+else if(keyboard_check_pressed(Input_Action))
+{
+	for(var i = 0; i <  ds_list_size(playerArray); i++)
+	{
+		with(playerArray[| i])
+		{
+			script_execute(skillScript);
+		}
+	}
+	
+}
+
+
 
 for( i = ds_list_size(playerArray)-1; i >= 0 ;i--)
 {
-	with(playerArray[| i])
-	{
-		scr_CheckSameSpot();	
-	}
+			with(playerArray[| i])
+			{
+		
+				scr_CheckSameSpot();	
+			}
 }
+
+
 
 

@@ -1,6 +1,6 @@
 event_inherited();
 
-skillScript = scr_Fire;
+skillScript = scr_Blink;
 
 
 directionSprites = ds_map_create();
@@ -12,5 +12,7 @@ directionSprites[? "r"] = spr_BlinkerRight;
 
 className = "Blinker";
 classColor = c_blue;
+
+skillPriority = 0;
 
 scr_UpdateSprite();

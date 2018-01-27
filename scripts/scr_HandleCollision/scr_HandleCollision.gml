@@ -16,5 +16,13 @@ else if(tileCollided == 3)
 
 else if(tileCollided == 4)
 {
-	return "hole"	
+	room_restart();
+	
+	return "walk"
+}
+
+else if(tileCollided == 5)
+{
+	return "walk";
+
 }

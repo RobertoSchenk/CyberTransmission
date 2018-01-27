@@ -1,7 +1,7 @@
 event_inherited();
 
 skillScript = scr_Fire;
-
+skillPriority = 2;
 
 directionSprites = ds_map_create();
 
